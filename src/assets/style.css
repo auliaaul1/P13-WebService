@@ -1,0 +1,150 @@
+/* Background */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #fff7fa;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 30px;
+}
+
+/* Judul */
+.title {
+  text-align: center;
+  color: #d46a92;
+  margin-bottom: 30px;
+}
+
+/* Grid User */
+.user-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+/* Card */
+.card {
+  background: white;
+  border-radius: 20px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(255, 182, 193, 0.25);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Avatar */
+.avatar {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 4px solid #ffd6e5;
+  margin-bottom: 15px;
+}
+
+/* Text */
+.card h3,
+.card h2 {
+  color: #c85a84;
+}
+
+.card p {
+  color: #666;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  background: #f7b2c8;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ec8fb0;
+}
+
+/* Form */
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #c85a84;
+  font-weight: bold;
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #f3c6d5;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #ec8fb0;
+}
+
+/* ===== HEADER ===== */
+
+.navbar {
+  background: white;
+  padding: 18px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  box-shadow: 0 3px 15px rgba(255, 182, 193, 0.25);
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #d46a92;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #c85a84;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  background: #ffe4ee;
+}
+
+.router-link-active {
+  background: #f7b2c8;
+  color: white !important;
+}
